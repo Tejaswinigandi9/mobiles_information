@@ -58,7 +58,7 @@ def infer_gemma(query):
 
         pipe = pipeline(
             "text-generation",
-            access_token = "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",
+            access_token = "hf_token",
             model="google/gemma-2-2b-it",
             model_kwargs={"torch_dtype": torch.bfloat16},
             device="cuda",  # replace with "mps" to run on a Mac device
